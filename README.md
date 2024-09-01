@@ -1,9 +1,9 @@
 # irobotroot
 
-[![GoDoc](https://godoc.org/github.com/koeng101/irobotroot?status.svg)](https://godoc.org/github.com/koeng101/irobotroot)
-[![Go Report Card](https://goreportcard.com/badge/github.com/koeng101/irobotroot)](https://goreportcard.com/report/github.com/koeng101/irobotroot)
+[![GoDoc](https://godoc.org/github.com/koeng101/irobotroot?status.svg)](https://godoc.org/github.com/koeng101/irobotroot/lib)
+[![Go Report Card](https://goreportcard.com/badge/github.com/koeng101/irobotroot)](https://goreportcard.com/report/github.com/koeng101/irobotroot/lib)
 
-`irobotroot` is a Go package that provides an interface for interacting with iRobot's Root robot using Bluetooth Low Energy (BLE). This package implements the Root Robot Bluetooth Low Energy Protocol, allowing developers to communicate with Root robots using any BLE-capable hardware.
+`irobotroot` is a Go package that provides a Bluetooth Low Energy (BLE) and protobuf interface for interacting with iRobot's Root robot. `lib` implements the Root Robot Bluetooth Low Energy Protocol, allowing developers to communicate with Root robots using any BLE-capable hardware. `pb` implements the Root Robot BLE Protocol behind a protobuf API so that you can operate many robots remotely.
 
 Everything here is based off of the [iRobot Root BLE documentation](https://github.com/iRobotEducation/root-robot-ble-protocol).
 
@@ -18,7 +18,7 @@ Everything here is based off of the [iRobot Root BLE documentation](https://gith
 
 To install the package, use `go get`:
 ```
-go get github.com/koeng101/irobotroot
+go get github.com/koeng101/irobotroot/lib
 ```
 
 ## Usage
@@ -30,7 +30,7 @@ package main
 
 import (
     "fmt"
-    "github.com/koeng101/irobotroot"
+    "github.com/koeng101/irobotroot/lib"
 )
 
 func main() {
@@ -65,4 +65,4 @@ This example demonstrates how to:
 4. Handle the response
 5. Properly disconnect and stop the event listener when done
 
-For more detailed usage examples and API documentation, please refer to the [GoDoc](https://godoc.org/github.com/koeng101/irobotroot).
+For more detailed usage examples and API documentation, please refer to the [GoDoc](https://godoc.org/github.com/koeng101/irobotroot/lib).

@@ -26,11 +26,6 @@ go get github.com/koeng101/irobotroot
 Here's a basic example of how to use the package:
 
 ```go
-## Usage
-
-Here's a basic example of how to use the package:
-
-```go
 package main
 
 import (

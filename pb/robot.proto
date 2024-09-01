@@ -1,0 +1,47 @@
+syntax = "proto3";
+package train.v1;
+option go_package = "github.com/koeng101/irobotroot/pb/robot.proto";
+
+service RobotService {
+  rpc StartEventListener(StartEventListenerRequest) returns (StartEventListenerResponse);
+  rpc StopEventListener(StopEventListenerRequest) returns (StopEventListenerResponse);
+  rpc GetVersions(GetVersionsPacket) returns (GetVersionsResponse);
+  rpc SetName(SetNamePacket) returns (SetNameResponse);
+  rpc GetName(GetNameRequest) returns (GetNameResponse);
+  rpc StopAndReset(StopAndResetRequest) returns (StopAndResetResponse);
+  rpc Disconnect(DisconnectRequest) returns (DisconnectResponse);
+  rpc EnableEvents(EnableEventsPacket) returns (EnableEventsResponse);
+  rpc DisableEvents(DisableEventsPacket) returns (DisableEventsResponse);
+  rpc GetEnabledEvents(GetEnabledEventsRequest) returns (GetEnabledEventsResponse);
+  rpc GetSerialNumber(GetSerialNumberRequest) returns (GetSerialNumberResponse);
+  rpc GetSKU(GetSKURequest) returns (GetSKUResponse);
+  rpc SetLeftAndRightMotorSpeed(SetLeftAndRightMotorSpeedPacket) returns (SetLeftAndRightMotorSpeedResponse);
+  rpc SetLeftMotorSpeed(SetLeftMotorSpeedPacket) returns (SetLeftMotorSpeedResponse);
+  rpc SetRightMotorSpeed(SetRightMotorSpeedPacket) returns (SetRightMotorSpeedResponse);
+  rpc DriveDistance(DriveDistancePacket) returns (DriveDistanceResponse);
+  rpc RotateAngle(RotateAnglePacket) returns (RotateAngleResponse);
+  rpc SetGravityCompensation(SetGravityCompensationPacket) returns (SetGravityCompensationResponse);
+  rpc ResetPosition(ResetPositionRequest) returns (ResetPositionResponse);
+  rpc GetPosition(GetPositionRequest) returns (GetPositionResponse);
+  rpc NavigateToPosition(NavigateToPositionPacket) returns (NavigateToPositionResponse);
+  rpc Dock(DockRequest) returns (DockResponse);
+  rpc Undock(UndockRequest) returns (UndockResponse);
+  rpc DriveArc(DriveArcPacket) returns (DriveArcResponse);
+  rpc SetMarkerErasePosition(SetMarkerErasePositionPacket) returns (SetMarkerErasePositionResponse);
+  rpc SetLEDAnimation(SetLEDAnimationPacket) returns (SetLEDAnimationResponse);
+  rpc GetColorSensorData(GetColorSensorDataPacket) returns (GetColorSensorDataResponse);
+  rpc PlayNote(PlayNotePacket) returns (PlayNoteResponse);
+  rpc StopSound(StopSoundRequest) returns (StopSoundResponse);
+  rpc SayPhrase(SayPhrasePacket) returns (SayPhraseResponse);
+  rpc PlaySweep(PlaySweepPacket) returns (PlaySweepResponse);
+  rpc GetIRProximityValuesWithTimestamp(GetIRProximityValuesWithTimestampRequest) returns (GetIRProximityValuesWithTimestampResponse);
+  rpc GetPackedIRProximityValuesAndStates(GetPackedIRProximityValuesAndStatesRequest) returns (GetPackedIRProximityValuesAndStatesResponse);
+  rpc SetEventThresholds(SetEventThresholdsPacket) returns (SetEventThresholdsResponse);
+  rpc GetEventThresholds(GetEventThresholdsRequest) returns (GetEventThresholdsResponse);
+  rpc GetLightValues(GetLightValuesRequest) returns (GetLightValuesResponse);
+  rpc GetBatteryLevel(GetBatteryLevelRequest) returns (GetBatteryLevelResponse);
+  rpc GetAccelerometer(GetAccelerometerRequest) returns (GetAccelerometerResponse);
+  rpc GetDockingValues(GetDockingValuesRequest) returns (GetDockingValuesResponse);
+  rpc GetIPv4Addresses(GetIPv4AddressesRequest) returns (GetIPv4AddressesResponse);
+  rpc RequestEasyUpdate(RequestEasyUpdateRequest) returns (RequestEasyUpdateResponse);
+}

@@ -5,7 +5,7 @@
 
 `irobotroot` is a Go package that provides an interface for interacting with iRobot's Root robot using Bluetooth Low Energy (BLE). This package implements the Root Robot Bluetooth Low Energy Protocol, allowing developers to communicate with Root robots using any BLE-capable hardware.
 
-Everything here is based off of the [iRobot Root BLE documentation](https://github.com/iRobotEducation/root-robot-ble-protocol?tab=readme-ov-file#device-2---markereraser).
+Everything here is based off of the [iRobot Root BLE documentation](https://github.com/iRobotEducation/root-robot-ble-protocol).
 
 ## Features
 
